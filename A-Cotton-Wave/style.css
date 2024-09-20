@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'works sans';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0px 90px;
+    padding-top: 140px;
+    gap:70px;
+}
+
+#left{
+    height: 100%;
+    width: 45%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+#left h1 {
+    font-size: 145px;
+    font-weight: 500;
+    line-height: 140px;
+    font-family: work sans;
+}
+
+
+#left-bottom{
+    /* height: 40%; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+#color{
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 8px 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#color h5 {
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 500;
+}
+#color-1{
+    height: 20px;
+    width: 20px;
+    background: burlywood;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#color-2{
+    height: 20px;
+    width: 20px;
+    background: brown;
+    border-radius: 50%;
+}
+
+
+#left-bottom h2{
+   font-size: 30px;
+   margin-top: 40px;
+   margin-bottom: 10px;
+}
+
+#left-bottom p{
+    width: 65%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444;
+    line-height: 30px;
+ }
+
+
+#right{
+    height: 90%;
+    width: 33%;
+    /* background-color: aqua; */
+    position: relative;
+}
+#right-top{
+    /* background-color: blue; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#right-top h4{
+   font-size: 20px;
+   font-family: work sans;
+   font-weight: 600;
+   
+}
+
+#right-top h5{
+    font-size: 14px; 
+}
+
+#right-top h5 i{
+    color: gold;
+}
+
+#right img{
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+
+}
+
+#add-bag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(43, 41, 41);
+    position: absolute;
+    top:20%;
+    right: -18%;
+}
+
+#add-bag h5{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#rotated{
+    bottom: 5%;
+    font-size: 30px;
+    font-weight: 500;
+    /* background-color: red; */
+    left: -20px;
+    transform-origin: 0; 
+    rotate: -90deg;
+    position: absolute;
+}
