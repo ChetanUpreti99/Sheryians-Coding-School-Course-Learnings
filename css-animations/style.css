@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    padding: 5vw;
+}
+
+
+@keyframes anime {
+    from {
+        left: 0;
+        background-color: royalblue;
+        rotate: 0;
+    }
+    to {
+        left: 60%;
+        background-color: tomato;
+        rotate: 360deg;
+    }
+}
+
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* animation-fill-mode: forwards;  keep the last state */
+    /* animation-iteration-count: infinite;  */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: ease-in; */
+}
+
+img{
+    height: 500px;
+    /* width: 600px; */
+    /* object-fit: cover; */
+    position: absolute;
+    animation: anime 2s 1s;
+}
+
+@keyframes anime {
+    /* from {
+        left: 0;
+        top:0;
+    }
+    
+    to {
+        left: 80%;
+        top:50%;
+    } */
+
+    0%{
+        left: 0;
+        top: 0;
+        rotate: 0deg;
+    }
+    50%{
+        left: 80%;
+        top: 0;
+        rotate: 0deg;
+    }
+    100%{
+        left: 80%;
+        top: 50%;
+        rotate: 360deg;
+    }
+    
+}
+
+h1{
+    font-size: 100px;
+    color: brown;
+}
+
+h1::before{
+    content: "😇";
+    font-size: 50px;
+}
+
+h1::after{
+    content: "🤩";
+    font-size: 50px;
+}
+
+#box1{
+    width: 300px;
+    height: 300px;
+    background-color: royalblue;
+}
+
+#box1::before{
+    content: "😇";
+    font-size: 50px;
+}
+
+#box1::after{
+    content: "😇";
+    font-size: 50px;
+}
+
+
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    transition: all linear 0.5s;
+    overflow: hidden;
+}
+
+
+button::after{
+    content: "";
+    /* height: 100%;
+    width: 0%; */
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all linear 0.2s;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+button:hover::after{
+   /* width: 100%; */
+   transform: translate(-50%, -50%) scale(3);
+}
+
+button:hover{
+  color: black;
+    
+ }
