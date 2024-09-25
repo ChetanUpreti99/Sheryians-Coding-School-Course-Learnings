@@ -111,3 +111,22 @@ font-size: 1em;
     width: 60%;
     background-color: blue;
 }
+
+
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: royalblue;
+}
+
+@media (max-width:600px) {
+    #box{
+        background-color: red;
+    }
+}
+
+@media (max-height:300px) {
+    #box{
+        background-color: black;
+    }
+}
