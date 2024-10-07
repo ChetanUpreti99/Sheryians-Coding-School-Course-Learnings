@@ -237,8 +237,31 @@ html,body{
 
 
 #page2{
-    height: 20vh;
+    height: 100%;
     width: 100%;
-    
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2 #page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1525943837837-af668e09139d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+
+#page2 #page2-part2{
+    height: 100%;
+    width: 40%;
+}
+
+#page2 #page2-part2 img{
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
 }
 
