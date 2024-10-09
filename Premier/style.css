@@ -54,7 +54,7 @@ html,body{
 	position: absolute;
 	font-size: 17px;
 	font-weight: 300;
-	top:27%;
+	top:26%;
 	right: 16%;
 	font-family: gilroy;
 }
@@ -85,11 +85,11 @@ html,body{
 	font-weight: 600;
 }
 
-#nav h2:nth-last-child(2) {
+#nav h2:nth-last-child(3) {
 	width: 29%;
  }
 
-#nav h2:nth-last-child(1) {
+#nav h2:nth-last-child(2) {
    width: 10%;
    /* background-color: red; */
 }
