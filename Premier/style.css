@@ -42,6 +42,30 @@ html,body{
     font-family: monument;
     font-size: 45px;
     letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after{
+    content:"©";
+    position: absolute;
+    font-size: 17px;
+    font-weight: 300;
+    top:27%;
+    right: 16%;
+    font-family: gilroy;
+}
+
+
+#nav h1::before{
+    content:"model management";
+    position: absolute;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+    font-weight: 200;
+    bottom: 15%;
+    right: 18%;
+    font-family: gilroy;
+    color: gray;
 }
 
 #nav h2{
